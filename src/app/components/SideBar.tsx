@@ -5,32 +5,17 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Github,
-  Twitter,
-  Twitch,
-  Linkedin,
-  Youtube,
-  MessageSquare,
-} from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/cv", label: "CV" },
-  { href: "/conferences", label: "Conferences" },
-  { href: "/podcasts", label: "Podcasts" },
-  { href: "/blog", label: "Blog" },
-  { href: "/support", label: "Support my Work" },
   { href: "/contact", label: "Contact" },
 ];
 
 const socialLinks = [
   { icon: Github, href: "#", label: "GitHub" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Twitch, href: "#", label: "Twitch" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: MessageSquare, href: "#", label: "Discord" },
 ];
 
 export function Sidebar() {
@@ -45,8 +30,8 @@ export function Sidebar() {
       <div className="flex flex-col h-full">
         <div className="flex flex-col items-center space-y-4 mb-8">
           <Avatar className="w-32 h-32">
-            <AvatarImage src="/placeholder.svg" alt="Profile" />
-            <AvatarFallback>PF</AvatarFallback>
+            <AvatarImage src="" alt="Profile" />
+            <AvatarFallback>GC</AvatarFallback>
           </Avatar>
         </div>
 

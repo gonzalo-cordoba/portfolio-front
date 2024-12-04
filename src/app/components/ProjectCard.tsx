@@ -5,10 +5,11 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 interface Technology {
   name: string;
-  icon: string;
+  icon: JSX.Element;
   color: string;
 }
 
@@ -49,7 +50,7 @@ export function ProjectCard({
               className="p-1 rounded-full"
               style={{ backgroundColor: tech.color }}
             >
-              <Image src={tech.icon} alt={tech.name} width={24} height={24} />
+              <div className="w-6 h-6 text-white">{tech.icon}</div>
             </motion.div>
           ))}
         </div>

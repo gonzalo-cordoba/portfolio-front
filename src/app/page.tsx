@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ProjectCard } from "./components";
+import { AxeIcon, BotIcon, VolumeIcon } from "lucide-react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -28,9 +29,9 @@ const projects = [
     githubUrl: "https://github.com/yourusername/project1",
     liveUrl: "https://project1.com",
     technologies: [
-      { name: "React", icon: "/icons/react.svg", color: "#61DAFB" },
-      { name: "TypeScript", icon: "/icons/typescript.svg", color: "#3178C6" },
-      { name: "Next.js", icon: "/icons/nextjs.svg", color: "#000000" },
+      { name: "React", icon: <VolumeIcon />, color: "#61DAFB" },
+      { name: "TypeScript", icon: <AxeIcon />, color: "#3178C6" },
+      { name: "Next.js", icon: <BotIcon />, color: "#000000" },
     ],
   },
   {
@@ -40,12 +41,11 @@ const projects = [
     githubUrl: "https://github.com/yourusername/project2",
     liveUrl: "https://project2.com",
     technologies: [
-      { name: "Vue", icon: "/icons/vue.svg", color: "#4FC08D" },
-      { name: "JavaScript", icon: "/icons/javascript.svg", color: "#F7DF1E" },
-      { name: "Tailwind", icon: "/icons/tailwind.svg", color: "#06B6D4" },
+      { name: "Vue", icon: <VolumeIcon />, color: "#4FC08D" },
+      { name: "JavaScript", icon: <AxeIcon />, color: "#F7DF1E" },
+      { name: "Tailwind", icon: <BotIcon />, color: "#06B6D4" },
     ],
   },
-  // Add more projects as needed
 ];
 
 export default function Home() {
