@@ -7,11 +7,12 @@ import { DiReact } from "react-icons/di";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1 and its features.",
-    image: "/placeholder.svg",
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    title: "Stackly- Landing Page",
+    description:
+      "Desarrollé una landing page para una empresa especializada en infraestructura de datos financieros modernos para el sector fintech. Esta página fue diseñada para reflejar su enfoque en integrar datos de múltiples proveedores bancarios y bases de datos de fintech, con el objetivo de agilizar operaciones, reducir riesgos de fraude y mejorar la eficiencia operativa. El diseño se centró en transmitir confianza, innovación y la capacidad de la empresa para optimizar los procesos clave dentro de las fintechs.",
+    image: "/stackly.webp",
+    githubUrl: "https://github.com/gonzalo-cordoba/landing-stackly",
+    liveUrl: "https://landing-stackl.vercel.app/",
     technologies: [
       {
         name: "React",
@@ -31,11 +32,12 @@ const projects = [
     ],
   },
   {
-    title: "Project 2",
-    description: "An overview of Project 2 and what it accomplishes.",
-    image: "/placeholder.svg",
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    title: "Dot Dager - Landing Page",
+    description:
+      "Landing page para un youtuber del ambiente IT, destacando su trayectoria y mostrando sus pasiones. La página incluye secciones que detallan su contenido, intereses personales y la conexión que busca generar con su audiencia. El diseño fue creado para capturar la esencia de su marca y personalidad, con un enfoque en crear una experiencia atractiva y auténtica para sus seguidores.",
+    image: "/dager-landing.webp",
+    githubUrl: "https://github.com/gonzalo-cordoba/dager-landing-serious",
+    liveUrl: "https://dager-landing-serious.vercel.app/",
     technologies: [
       {
         name: "React",
