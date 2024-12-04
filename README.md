@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Personal - Front-End Developer
 
-## Getting Started
+Bienvenido a mi portfolio personal. Este proyecto está diseñado para mostrar mis habilidades como desarrollador front-end especializado en **React**, **TypeScript** y **Next.js**.
 
-First, run the development server:
+## 🚀 Tecnologías utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Este proyecto aprovecha las siguientes tecnologías y herramientas:
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Radix UI**
+- **Lucide React** y **React Icons**
+
+## 📂 Estructura del proyecto
+
+```plaintext
+portfolio-dev/
+├── public/               # Archivos estáticos (imágenes, favicons, etc.)
+├── src/
+│   ├── components/       # Componentes reutilizables
+│   ├── pages/            # Páginas del proyecto
+│   ├── styles/           # Archivos de estilos globales
+│   └── utils/            # Funciones auxiliares
+├── tailwind.config.js    # Configuración de Tailwind CSS
+├── package.json          # Dependencias y scripts del proyecto
+└── README.md             # Documentación del proyecto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Scripts disponibles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `npm run dev`
 
-## Learn More
+Inicia el servidor de desarrollo en `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+### `npm run build`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Crea una versión optimizada para producción.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### `npm run start`
 
-## Deploy on Vercel
+Inicia el servidor de producción después de construir el proyecto.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### `npm run lint`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ejecuta ESLint para verificar errores en el código.
+
+## 🎨 Diseño
+
+El diseño del portfolio está enfocado en:
+
+- **Claridad**: Una navegación sencilla y efectiva.
+- **Interactividad**: Animaciones atractivas y fluidas.
+- **Responsividad**: Adaptado para todos los tamaños de pantalla.
+- **Modo oscuro**: Personalizable gracias a **Next Themes**.
+
+## 🌐 Deployment
+
+El proyecto está desplegado utilizando [Vercel](https://vercel.com), lo que garantiza una entrega rápida mediante CDN y soporte nativo para Next.js.
+
+## 💡 Funcionalidades destacadas
+
+- **Modo oscuro y claro**: Implementado con `next-themes`.
+- **Animaciones**: Animaciones fluidas y atractivas utilizando `framer-motion`.
+- **Iconografía**: Uso de `lucide-react` y `react-icons` para una experiencia visual moderna.
+- **Componentes reutilizables**: Construcción modular usando **Radix UI** y **Tailwind CSS**.
+
+## 📦 Dependencias principales
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+## 🤝 Contribuciones
+
+Aunque es un proyecto personal, cualquier sugerencia es bienvenida. Siéntete libre de abrir un issue o enviar un pull request.
+
+---
+
+¡Gracias por visitar mi portfolio! Si tienes preguntas o deseas colaborar, no dudes en contactarme.
