@@ -1,11 +1,11 @@
 "use client";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Github, Linkedin } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 const links = [
   { href: "/", label: "Home" },
@@ -14,8 +14,16 @@ const links = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  {
+    icon: FaGithub,
+    href: "https://github.com/gonzalo-cordoba",
+    label: "GitHub",
+  },
+  {
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/gonzalocordob/",
+    label: "LinkedIn",
+  },
 ];
 
 export function Sidebar() {
@@ -30,7 +38,10 @@ export function Sidebar() {
       <div className="flex flex-col h-full">
         <div className="flex flex-col items-center space-y-4 mb-8">
           <Avatar className="w-32 h-32">
-            <AvatarImage src="" alt="Profile" />
+            <AvatarImage
+              src="https://media.licdn.com/dms/image/v2/C4E03AQES7mIbBslr5A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1626736649555?e=1738800000&v=beta&t=jS8e6tmsH4Dwij0BUL0PwtR-T65yCHKhWxFCYuXdiBI"
+              alt="Profile"
+            />
             <AvatarFallback>GC</AvatarFallback>
           </Avatar>
         </div>
@@ -42,7 +53,7 @@ export function Sidebar() {
                 whileHover={{ x: 5 }}
                 className={`px-4 py-2 rounded-lg transition-colors ${
                   pathname === link.href
-                    ? "bg-secondary"
+                    ? "bg-[#1d3557] text-white"
                     : "hover:bg-secondary/50"
                 }`}
               >
@@ -55,18 +66,15 @@ export function Sidebar() {
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 justify-center">
             {socialLinks.map((link) => (
-              <Button
+              <a
                 key={link.label}
-                variant="ghost"
-                size="icon"
-                asChild
-                className="hover:bg-secondary"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Link href={link.href}>
-                  <link.icon className="h-5 w-5" />
-                  <span className="sr-only">{link.label}</span>
-                </Link>
-              </Button>
+                <link.icon className="h-8 w-8" />
+                <span className="sr-only">{link.label}</span>
+              </a>
             ))}
           </div>
         </div>
