@@ -4,8 +4,8 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import { IoLogoGithub } from "react-icons/io";
 
 interface Technology {
   name: string;
@@ -50,16 +50,23 @@ export function ProjectCard({
               className="p-1 rounded-full"
               style={{ backgroundColor: tech.color }}
             >
-              <div className="w-6 h-6 text-white">{tech.icon}</div>
+              <div className="w-8 h-8 text-white">{tech.icon}</div>
             </motion.div>
           ))}
         </div>
         <div className="flex gap-2 w-full">
           <Button asChild className="flex-1">
-            <Link href={githubUrl}>GitHub</Link>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <span>
+                <IoLogoGithub />
+              </span>
+              GitHub
+            </a>
           </Button>
           <Button asChild className="flex-1">
-            <Link href={liveUrl}>Live Site</Link>
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+              Ver en vivo
+            </a>
           </Button>
         </div>
       </CardFooter>

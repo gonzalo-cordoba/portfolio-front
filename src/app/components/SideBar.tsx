@@ -40,7 +40,7 @@ export function Sidebar() {
           <Avatar className="w-32 h-32">
             <AvatarImage
               src="https://media.licdn.com/dms/image/v2/C4E03AQES7mIbBslr5A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1626736649555?e=1738800000&v=beta&t=jS8e6tmsH4Dwij0BUL0PwtR-T65yCHKhWxFCYuXdiBI"
-              alt="Profile"
+              alt="Gonzalo Cordoba"
             />
             <AvatarFallback>GC</AvatarFallback>
           </Avatar>

@@ -1,7 +1,17 @@
+"use client";
+import { motion } from "framer-motion";
+import { ExperienceComponent } from "@/app/components";
+import { container } from "@/app/page";
+
 export default function CurriculumPage() {
   return (
-    <div>
-      <h1>CVHello Page</h1>
-    </div>
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="max-w-4xl mx-auto space-y-12"
+    >
+      <ExperienceComponent />
+    </motion.div>
   );
 }
